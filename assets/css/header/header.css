@@ -1,0 +1,38 @@
+header {
+    display: grid;
+    background-color: #0070C0;
+}
+
+header #cv-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+header #cv-img-container img {
+    width: 60%;
+    border-radius: 20%;
+}
+
+
+header #cv-title {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background-color: #BFBFBF;
+}
+
+header #cv-title h1 {
+    font-size: 35px;
+    margin-bottom: 1rem;
+    color: #ED7D31;
+    text-shadow: 2px -1px 2px black;
+}
+
+header #cv-title h2 {
+   text-transform: uppercase;
+   font-size: 25px;
+   color: white;
+}
