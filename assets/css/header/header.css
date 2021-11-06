@@ -1,6 +1,6 @@
 header {
     display: grid;
-    background-color: #0070C0;
+    background-color: var(--main-bg-color);
 }
 
 header #cv-img-container {
@@ -21,13 +21,13 @@ header #cv-title {
     width: 100%;
     padding: 1rem;
     text-align: center;
-    background-color: #BFBFBF;
+    background-color: var(--secondary-bg-color);
 }
 
 header #cv-title h1 {
     font-size: 35px;
     margin-bottom: 1rem;
-    color: #ED7D31;
+    color: var(--main-bg-text-color);
     text-shadow: 2px -1px 2px black;
 }
 

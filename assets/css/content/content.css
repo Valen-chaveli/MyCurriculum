@@ -1,0 +1,38 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+main > section {
+    width: 100%;
+    margin-bottom: 1.2rem;
+}
+
+main > section > h2#title{
+    background-color: var(--main-bg-color);
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px -1px 2px black;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 0.4rem;
+    border-radius: 5px 5px 0px 0px;
+}
+
+main > section .section-content {
+    padding: 1rem;
+    margin-bottom: 0.4rem;
+    width: 100%;
+    border-radius: 0px 0px 5px 5px;
+    background-color: var(--secondaty-bg-color-light);
+}
+
+main > section .cv-content-container {
+    display: grid;                  
+    background-color: orange;
+}

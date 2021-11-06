@@ -1,2 +1,5 @@
 @import "./reset.css";
+@import "./common.css";
 @import "./header/header.css";
+@import "./content/content.css";
+@import "./contact/contact.css";
