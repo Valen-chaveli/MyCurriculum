@@ -30,9 +30,40 @@ main > section .section-content {
     width: 100%;
     border-radius: 0px 0px 5px 5px;
     background-color: var(--secondaty-bg-color-light);
+    border: 1px solid black;
 }
 
-main > section .cv-content-container {
+/* Sections content grid container */
+main > section .section-content-grid {
     display: grid;                  
-    background-color: orange;
+    grid-template-areas: 
+    "period job job job"
+    "tasks tasks tasks tasks";
+    grid-gap: 15px;
+}
+
+/* All sections content */
+main > section .section-content-grid > div{
+    padding: 1rem;
+}
+
+/* Period box */
+main > section .section-content-grid .period-box {
+    display: grid;    
+    grid-area: period;              
+    border: 1px solid red;
+}
+
+/* Job Box */
+main > section .section-content-grid .job-box {
+    display: grid;     
+    grid-area: job;             
+    border: 1px solid blue;
+}
+
+/* Some Tasks box */
+main > section .section-content-grid .some-task-box {
+    display: grid;
+    grid-area: tasks;                  
+    border: 1px solid gold;
 }
