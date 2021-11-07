@@ -1,0 +1,3 @@
+.skills-container > div:not(:last-child) {
+    margin-bottom: 12px;
+}

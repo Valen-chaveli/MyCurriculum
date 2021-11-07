@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     addExperineces();
     addEducation();
     addLanguages();
+    addSkills();
 })
 
 function addExperineces() {
@@ -118,5 +119,19 @@ function addLanguages() {
         languageContainer.append(languageFlagContainer, languageItem, levelBarItemContainer);
 
         languagesParentContainer.append(languageContainer);
+    });
+}
+
+function addSkills() {
+    let { skills } = data;
+    
+    let skillsContainerMobile = document.querySelector("#skills-container-mobile");
+    
+    skills.forEach((skill) => {
+        let skillItemContainer = document.createElement("div");
+        skillsContainerMobile.classList.add("section-content", "skills-container");
+        
+        skillItemContainer.innerHTML = skill;
+        skillsContainerMobile.append(skillItemContainer);
     });
 }

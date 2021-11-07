@@ -56,8 +56,8 @@ export const data = {
         },
     ],
     skills : [
-        {
-
-        }
-    ]
+        "- Creativity", 
+        "- Problem-solving Capacity", 
+        "- Adaptive Capacity", 
+        "- TeamWork"]
 }

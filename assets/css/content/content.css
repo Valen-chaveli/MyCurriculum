@@ -24,6 +24,11 @@ main > section > h2#title{
     border-radius: 5px 5px 0px 0px;
 }
 
+/* Section Icons */
+main > section > h2#title > i{
+    margin-left: 10px;
+}
+
 main > section .section-content {
     padding: 1rem;
     margin-bottom: 0.4rem;
