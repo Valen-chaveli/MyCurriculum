@@ -1,0 +1,47 @@
+#languages {
+    text-align: center;
+    padding: 0.5rem;
+    background-color: var(--secondaty-bg-color-light);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.cv-language-item-container {
+    padding: 0.5rem;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.languageItem {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 40%;
+}
+
+/* Level (B1, B2 ...) */
+.languageItem > span{
+    font-weight: bold;
+}
+
+.cv-language-item-container .language-img-container{
+    width: 10%;
+}
+
+.cv-language-item-container .language-img-container img{
+    width: 100%;
+}
+
+.level-bar-container {
+    border: 1px solid black;
+    width: 50%;
+    height: 10px;
+    position: relative;
+}
+
+
+.level-bar-progres {
+    position: absolute;
+    background-color: black;
+    height: 10px;
+}

@@ -39,5 +39,25 @@ export const data = {
             titleName : "Vocational Education and Training of Systems Microcomputers and networks",
             schoolName : "IES MARÍA ENRÍQUEZ"
         }
+    ],
+
+    languages: [
+        {
+            languageName : "Japanese",
+            level: "B1",
+            percent: "50%",
+            flagLink : "./assets/img/j-flag.png",
+        },
+        {
+            languageName : "English",
+            level: "B1",
+            percent: "50%",
+            flagLink : "./assets/img/e-flag.png",
+        },
+    ],
+    skills : [
+        {
+
+        }
     ]
 }

@@ -3,6 +3,7 @@ import { data } from "../../config/data.js";
 document.addEventListener("DOMContentLoaded", () => {
     addExperineces();
     addEducation();
+    addLanguages();
 })
 
 function addExperineces() {
@@ -79,4 +80,43 @@ function addEducation() {
         educationParentContainer.append(educationContainer);
     });
 
+}
+
+function addLanguages() {
+    let { languages } = data;
+
+    let languagesParentContainer = document.querySelector("#languages-container");
+    
+    languages.forEach(({languageName, level, flagLink, percent}) => {
+
+        let languageContainer = document.createElement("div");
+
+        languageContainer.classList.add("cv-language-item-container");
+
+        let languageItem = document.createElement("div");
+        languageItem.classList.add("languageItem");
+        languageItem.innerHTML = languageName + " " + "<span>" + level + "</span>";
+        
+        // Language IMG
+        let languageFlagContainer = document.createElement("div");
+        languageFlagContainer.classList.add("language-img-container");
+        let languageFlagItem = document.createElement("img");
+        languageFlagItem.classList.add("img-language");
+        languageFlagItem.src = flagLink;
+        languageFlagContainer.append(languageFlagItem);
+
+        //Level bar
+        let levelBarItemContainer = document.createElement("div");
+        levelBarItemContainer.classList.add("level-bar-container");
+
+        let levelBarProgres = document.createElement("div");
+        levelBarProgres.classList.add("level-bar-progres");
+        levelBarProgres.style.width = percent;
+
+        levelBarItemContainer.append(levelBarProgres);
+
+        languageContainer.append(languageFlagContainer, languageItem, levelBarItemContainer);
+
+        languagesParentContainer.append(languageContainer);
+    });
 }
