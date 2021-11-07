@@ -3,3 +3,7 @@
 @import "./header/header.css";
 @import "./content/content.css";
 @import "./contact/contact.css";
+@import "./experience/experience.css";
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
