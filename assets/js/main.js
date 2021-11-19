@@ -126,12 +126,18 @@ function addSkills() {
     let { skills } = data;
     
     let skillsContainerMobile = document.querySelector("#skills-container-mobile");
+    let skillsContainerDesktop = document.querySelector("#skills-container-desktop");
     
     skills.forEach((skill) => {
         let skillItemContainer = document.createElement("div");
         skillsContainerMobile.classList.add("section-content", "skills-container");
-        
+        skillsContainerDesktop.classList.add("section-content", "skills-container");
+
         skillItemContainer.innerHTML = skill;
-        skillsContainerMobile.append(skillItemContainer);
+
+        if(window.matchMedia('screen and (max-width : 768px)').matches) 
+            skillsContainerMobile.append(skillItemContainer);
+        else 
+            skillsContainerDesktop.append(skillItemContainer);
     });
 }

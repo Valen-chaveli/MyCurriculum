@@ -1,6 +1,9 @@
 header {
-    display: grid;
     background-color: var(--main-bg-color);
+}
+
+header #cv-container-tecnologies {
+    display: none;
 }
 
 header #cv-img-container {
@@ -16,8 +19,11 @@ header #cv-img-container img {
     border-radius: 20%;
 }
 
-
 header #cv-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
     padding: 1rem;
     text-align: center;
@@ -28,11 +34,17 @@ header #cv-title h1 {
     font-size: 35px;
     margin-bottom: 1rem;
     color: var(--main-bg-text-color);
-    text-shadow: 2px -1px 2px black;
+    text-shadow: 2px -1px 2px rgba(0, 0, 0, 80%);
+    font-family: "AdvertaExtraBold";
+    letter-spacing: 2px;
 }
 
 header #cv-title h2 {
    text-transform: uppercase;
    font-size: 25px;
    color: white;
+}
+
+header #icon-desktop-header {
+    display: none;
 }

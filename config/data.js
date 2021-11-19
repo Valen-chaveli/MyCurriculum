@@ -59,5 +59,6 @@ export const data = {
         "- Creativity", 
         "- Problem-solving Capacity", 
         "- Adaptive Capacity", 
-        "- TeamWork"]
+        "- TeamWork"
+    ]
 }

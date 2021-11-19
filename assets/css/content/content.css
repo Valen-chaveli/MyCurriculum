@@ -6,12 +6,21 @@ main {
     padding: 1rem;
 }
 
-main > section {
+main > aside {
+    width: 100%;
+}
+
+main section {
     width: 100%;
     margin-bottom: 1.2rem;
 }
 
-main > section > h2#title{
+main aside #cv-skills-desktop, 
+main aside #cv-recognition-desktop {
+    display: none;
+}
+
+main section h2#title{
     background-color: var(--main-bg-color);
     text-transform: uppercase;
     color: white;
@@ -22,14 +31,15 @@ main > section > h2#title{
     width: 100%;
     margin-bottom: 0.4rem;
     border-radius: 5px 5px 0px 0px;
+    box-shadow: 2px 0px 21px 3px rgba(196,196,196,0.89);
 }
 
 /* Section Icons */
-main > section > h2#title > i{
+main section h2#title i{
     margin-left: 10px;
 }
 
-main > section .section-content {
+main section .section-content {
     padding: 1rem;
     margin-bottom: 0.4rem;
     width: 100%;
@@ -38,7 +48,7 @@ main > section .section-content {
 }
 
 /* Sections content grid container */
-main > section .section-content-grid {
+main section .section-content-grid {
     display: grid;                  
     grid-template-areas: 
     "period job job job"
@@ -47,7 +57,7 @@ main > section .section-content-grid {
 }
 
 /* All sections content */
-main > section .section-content-grid > div{
+main section .section-content-grid > div{
     padding: 1rem;
     background-color: var(--main-bg-color);
     border-radius: 5px;
@@ -55,7 +65,7 @@ main > section .section-content-grid > div{
 }
 
 /* Period box */
-main > section .section-content-grid .period-box {
+main section .section-content-grid .period-box {
     display: flex;
     grid-gap: 15px;
     text-align: center;
@@ -66,7 +76,7 @@ main > section .section-content-grid .period-box {
 }
 
 /* Job Box */
-main > section .section-content-grid .job-box {
+main section .section-content-grid .job-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,7 +87,7 @@ main > section .section-content-grid .job-box {
 }
 
 /* Some Tasks box */
-main > section .section-content-grid .some-task-box {
+main section .section-content-grid .some-task-box {
     grid-area: tasks;  
     line-height: 1.4rem;  
 }

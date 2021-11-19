@@ -4,90 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Curriculum web</title>
+    <meta name="description" content="My Curriculum Web doing with HTML, CSS and JS">
+    <title>Valentín Chaveli - My Curriculum web</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <div id="cv-img-container">
-            <!-- TODO: Poner imagenes de tecnologias web alrededor de la foto -->
-            <img src="./assets/img/FotoCurriculum.png" alt="Foto Curriculum">
+            <img src="./assets/img/CHAVELI MORENO, VALENTIN.png" alt="Foto Curriculum">
         </div>
         <div id="cv-title">
             <h1>Valentín Chaveli Moreno</h1>
             <h2>Web Developer</h2>
         </div>
+        <img id="icon-desktop-header" src="./assets/img/laptop.svg" alt="Laptop">
+        <div id="cv-container-tecnologies">
+            <img src="./assets/img/js.svg"/>
+            <img src="./assets/img/node.svg"/>
+            <img src="./assets/img/nestjs.svg"/>
+            <img src="./assets/img/php.svg"/>
+            <img src="./assets/img/react.svg"/>
+            <img src="./assets/img/mysql.svg"/>
+            <img src="./assets/img/mongodb.svg"/>
+            <img src="./assets/img/docker.svg"/>
+        </div>
     </header>
     <main>
-        <section id="cv-contact-information">
-            <h2 id="title">
-                Contact Information
-                <i class="fa fa-pencil" aria-hidden="true"></i>
-            </h2>
-            <div class="section-content" id="cv-contact-content">
-                <div>
-                    <i class="fa fa-birthday-cake" aria-hidden="true"></i>
-                    20 years
-               </div>
-               <div>
-                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                valen.develover@gmail.com
-               </div>
-               <div>
-                <i class="fa fa-mobile" aria-hidden="true"></i>
-                +34 650666526
-               </div>
-               <div>
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                Xeraco (Valencia)
-               </div>
-            </div>
-        </section>
-        <section id="cv-professional-experience">
-            <h2 id="title">
-                Professional Experience
-                <i class="fa fa-user-circle" aria-hidden="true"></i>
-
-            </h2>
-        </section>
-
-        <section id="cv-professional-education">
-            <h2 id="title">
-                Education
-                <i class="fa fa-book" aria-hidden="true"></i>
-            </h2>
-        </section>
-        <section id="cv-personal-competences">
-            <h2 id="title">
-                Personal competences
-               
-            </h2>
-            <div id="languages-container">
-                <h3 id="languages">Languages</h3>
-            </div>
-        </section>
-        <section id="cv-skills-mobile">
-            <h2 id="title">Skills
-                <i class="fa fa-cogs" aria-hidden="true"></i>
-            </h2>
-            <div id="skills-container-mobile"></div>
-        </section>
-        <section id="cv-recognition-mobile">
-            <h2 id="title">Recognition
-                <i class="fa fa-cogs" aria-hidden="true"></i>
-            </h2>
-            <div class="section-content" id="cv-recognition-mobile-text">
-                Obtaining a certificate of
-                Honorable Mention (H.M)
-                in the services module at
-                net
-                and student with better
-                ratings
-                in the course 2018
-                2019.
-            </div>
-        </section>
+        <aside id="cv-aside-information-desktop">
+            <section id="cv-contact-information">
+                <h2 id="title">
+                    Contact Information
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                </h2>
+                <div class="section-content" id="cv-contact-content">
+                    <div>
+                        <i class="fa fa-birthday-cake" aria-hidden="true"></i>
+                        20 years
+                   </div>
+                   <div>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    valen.develover@gmail.com
+                   </div>
+                   <div>
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    +34 650666526
+                   </div>
+                   <div>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    Xeraco (Valencia)
+                   </div>
+                </div>
+            </section>
+            <section id="cv-skills-desktop">
+                <h2 id="title">Skills
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                </h2>
+                <div id="skills-container-desktop"></div>
+            </section>
+            <section id="cv-recognition-desktop">
+                <h2 id="title">Recognition
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                </h2>
+                <div class="section-content" id="cv-recognition-mobile-text">
+                    Obtaining a certificate of
+                    Honorable Mention (H.M)
+                    in the services module at
+                    net
+                    and student with better
+                    ratings
+                    in the course 2018
+                    2019.
+                </div>
+            </section>
+        </aside>
+        <div id="cv-main-information-desktop">
+            <section id="cv-professional-experience">
+                <h2 id="title">
+                    Professional Experience
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                </h2>
+            </section>
+    
+            <section id="cv-professional-education">
+                <h2 id="title">
+                    Education
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                </h2>
+            </section>
+            <section id="cv-personal-competences">
+                <h2 id="title">
+                    Personal competences
+                   
+                </h2>
+                <div id="languages-container">
+                    <h3 id="languages">Languages</h3>
+                </div>
+            </section>
+            <section id="cv-skills-mobile">
+                <h2 id="title">Skills
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                </h2>
+                <div id="skills-container-mobile"></div>
+            </section>
+            <section id="cv-recognition-mobile">
+                <h2 id="title">Recognition
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                </h2>
+                <div class="section-content" id="cv-recognition-mobile-text">
+                    Obtaining a certificate of
+                    Honorable Mention (H.M)
+                    in the services module at
+                    net
+                    and student with better
+                    ratings
+                    in the course 2018
+                    2019.
+                </div>
+            </section>
+        </div>
+        
     </main>
     <script type="module" src="./config/data.js"></script>
     <script type="module" src="./assets/js/main.js"></script>

@@ -1,4 +1,5 @@
 @import "./reset.css";
+@import "./fonts.css";
 @import "./common.css";
 @import "./header/header.css";
 @import "./content/content.css";
@@ -7,6 +8,8 @@
 @import "./competences/competences.css";
 @import "./skills/skills.css";
 @import "./recognitons/recognitions.css";
+@import "./aside/aside.css";
+@import "./desktopDesign/desktop.css";
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
