@@ -1,6 +1,14 @@
 :root {
     --main-bg-color: #0070C0;
+    --main-bg-dark-color : #323232;
+    --section-bg-dark-color: #C8D5DE;
+
+    --secton-content-bg-dark-color : #394F5E;
+
     --main-bg-text-color: #ED7D31;
     --secondary-bg-color: #BFBFBF;
     --secondaty-bg-color-light: #68BBE3;
+    --body-dark-color : #1B3F59;
+    
+
 }

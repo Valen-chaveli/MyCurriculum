@@ -38,7 +38,8 @@ export const data = {
             period : "2017-2019",
             titleName : "Vocational Education and Training of Systems Microcomputers and networks",
             schoolName : "IES MARÍA ENRÍQUEZ"
-        }
+        },
+
     ],
 
     languages: [

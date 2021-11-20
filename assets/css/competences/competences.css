@@ -17,6 +17,11 @@
     margin-left: 20px;
     margin-right: 20px;
     width: 40%;
+    transition: .6s ease all;
+}
+
+.languageItem.dark{
+    color: white;
 }
 
 /* Level (B1, B2 ...) */
@@ -37,11 +42,24 @@
     width: 50%;
     height: 10px;
     position: relative;
+    transition: .6s ease all;
 }
 
+.level-bar-container.dark {
+    background-color: black;
+    transition: .6s ease all;
+}
 
 .level-bar-progres {
     position: absolute;
     background-color: black;
     height: 10px;
+}
+
+
+.level-bar-progres.dark{
+    position: absolute;
+    background-color: white;
+    height: 10px;
+    transition: .6s ease all;
 }

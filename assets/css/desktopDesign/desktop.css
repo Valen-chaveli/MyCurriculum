@@ -56,12 +56,13 @@
         z-index: 100;   
     }
 
-    header #icon-desktop-header {
+    header #dark-mode {
         display: block;
         position: absolute;
         top: 3%;
         left: 78%;
-        width: 75px;
+        width: 100px;
+        background-color: red;
     }
 
     /* MAIN */
@@ -92,6 +93,21 @@
 
     main div#cv-main-information-desktop {
         grid-area: main;       
+    }
+
+    .languageItem {
+        width: 20%;
+    }
+
+    .cv-language-item-container .language-img-container{
+        width: 5%;
+    }
+
+    .level-bar-container {
+        border: 1px solid black;
+        width: 60%;
+        height: 10px;
+        position: relative;
     }
 
 }

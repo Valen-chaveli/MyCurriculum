@@ -1,3 +1,12 @@
+body {
+    transition: .6s ease all;
+}
+
+body.dark {
+    background-color: var(--body-dark-color);
+    transition: .6s ease all;
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -13,6 +22,7 @@ main > aside {
 main section {
     width: 100%;
     margin-bottom: 1.2rem;
+  
 }
 
 main aside #cv-skills-desktop, 
@@ -20,7 +30,7 @@ main aside #cv-recognition-desktop {
     display: none;
 }
 
-main section h2#title{
+main section h2#title {
     background-color: var(--main-bg-color);
     text-transform: uppercase;
     color: white;
@@ -32,8 +42,13 @@ main section h2#title{
     margin-bottom: 0.4rem;
     border-radius: 5px 5px 0px 0px;
     box-shadow: 2px 0px 21px 3px rgba(196,196,196,0.89);
+    transition: .6s ease all;
 }
 
+main section h2#title.dark{
+    background-color: var(--main-bg-dark-color);
+    box-shadow: none;
+}
 /* Section Icons */
 main section h2#title i{
     margin-left: 10px;
@@ -45,6 +60,12 @@ main section .section-content {
     width: 100%;
     border-radius: 0px 0px 5px 5px;
     background-color: var(--secondaty-bg-color-light);
+    transition: .6s ease all;
+}
+
+main section .section-content.dark {
+    background-color: var(--section-bg-dark-color);
+    transition: .6s ease all;
 }
 
 /* Sections content grid container */
@@ -62,6 +83,13 @@ main section .section-content-grid > div{
     background-color: var(--main-bg-color);
     border-radius: 5px;
     color: white;
+    transition: .6s ease all;
+}
+
+
+main section .section-content-grid > div.dark{
+    background-color: var(--secton-content-bg-dark-color);
+    transition: .6s ease all;
 }
 
 /* Period box */
@@ -92,3 +120,8 @@ main section .section-content-grid .some-task-box {
     line-height: 1.4rem;  
 }
 
+
+main section#cv-personal-competences h3.dark {
+    background-color: var(--section-bg-dark-color);
+    transition: .6s ease all;
+}

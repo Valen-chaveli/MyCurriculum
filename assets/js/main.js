@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
     addEducation();
     addLanguages();
     addSkills();
+    configSwitch();
+    checkDarkMode();
 })
 
 function addExperineces() {
@@ -140,4 +142,60 @@ function addSkills() {
         else 
             skillsContainerDesktop.append(skillItemContainer);
     });
+}
+
+
+function configSwitch() {
+    const btnSwitch = document.querySelector("#switch");
+    const header = document.querySelector("header");
+    const titleSections = document.querySelectorAll("h2#title");
+    const sectionsContent = document.querySelectorAll(".section-content");
+    const sectionsTextContent = document.querySelectorAll(".section-content-grid > div");
+    const personalCompetencesTitles = document.querySelectorAll("main section#cv-personal-competences h3");
+    
+    const languegeItem = document.querySelectorAll(".languageItem");
+    const levelBarContainer = document.querySelectorAll(".level-bar-container");
+    const levelBarProgress = document.querySelectorAll(".level-bar-progres");
+
+    btnSwitch.addEventListener('click', () => {
+
+        document.body.classList.toggle("dark"); 
+        header.classList.toggle("dark");
+
+        languegeItem.forEach((language) => {
+            language.classList.toggle("dark")
+        })
+
+        levelBarContainer.forEach((barContainer) => {
+            barContainer.classList.toggle("dark");
+        })
+
+        levelBarProgress.forEach((barProgrses) => {
+            barProgrses.classList.toggle("dark");
+        })
+
+        titleSections.forEach((titleSection) => {
+            titleSection.classList.toggle("dark");
+        });
+
+        sectionsContent.forEach((sectionContent) => {
+            sectionContent.classList.toggle("dark")
+        })
+
+        sectionsTextContent.forEach((section) => {
+            section.classList.toggle("dark");
+        })
+
+        personalCompetencesTitles.forEach((personalCompetence) => {
+            personalCompetence.classList.toggle("dark")
+        })
+
+        btnSwitch.classList.toggle("active");
+        
+    })
+}
+
+function checkDarkMode() {
+
+  
 }

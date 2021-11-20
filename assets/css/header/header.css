@@ -1,5 +1,11 @@
 header {
     background-color: var(--main-bg-color);
+    transition: .6s ease all;
+}
+
+header.dark{
+    background-color: var(--main-bg-dark-color);
+    transition: .6s ease all;
 }
 
 header #cv-container-tecnologies {
@@ -45,6 +51,12 @@ header #cv-title h2 {
    color: white;
 }
 
-header #icon-desktop-header {
-    display: none;
+header #dark-mode {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: 1px solid red;
+    padding: 1.5rem;
+
 }
