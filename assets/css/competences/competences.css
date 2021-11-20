@@ -39,6 +39,7 @@
 
 .level-bar-container {
     border: 1px solid black;
+    border-radius: 10px;
     width: 50%;
     height: 10px;
     position: relative;
@@ -53,6 +54,7 @@
 .level-bar-progres {
     position: absolute;
     background-color: black;
+    border-radius: 10px;
     height: 10px;
 }
 

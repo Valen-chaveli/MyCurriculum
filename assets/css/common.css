@@ -2,13 +2,12 @@
     --main-bg-color: #0070C0;
     --main-bg-dark-color : #323232;
     --section-bg-dark-color: #C8D5DE;
-
     --secton-content-bg-dark-color : #394F5E;
-
-    --main-bg-text-color: #ED7D31;
+    --main-bg-text-color: #F5935F;
     --secondary-bg-color: #BFBFBF;
     --secondaty-bg-color-light: #68BBE3;
     --body-dark-color : #1B3F59;
-    
 
+    --switch-light-color : #E0E016;
+    --switch-dark-color: #1D4561;
 }

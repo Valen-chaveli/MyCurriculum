@@ -7,7 +7,7 @@ div#switch-container {
 }
 
 button#switch {
-    background-color: #343D5B;
+    background-color: var(--switch-dark-color);
     border-radius: 1000px;
     border: none;
     position: relative;
@@ -32,12 +32,12 @@ button#switch::after {
 }
 
 button#switch.active {
-    background: orange;
+    background: var(--switch-light-color);
     color: black;
 }
 
 button#switch.active::after {
-    background: orange;
+    background: var(--switch-light-color);
     color: black;
     right: 0;
     left: unset;

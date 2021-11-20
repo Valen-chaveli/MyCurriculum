@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     addLanguages();
     addSkills();
     configSwitch();
-    checkDarkMode();
 })
 
 function addExperineces() {
@@ -191,11 +190,5 @@ function configSwitch() {
         })
 
         btnSwitch.classList.toggle("active");
-        
     })
-}
-
-function checkDarkMode() {
-
-  
 }

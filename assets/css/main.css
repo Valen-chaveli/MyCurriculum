@@ -11,6 +11,7 @@
 @import "./aside/aside.css";
 @import "./desktopDesign/desktop.css";
 @import "./swtich/switch.css";
+@import "./progressBar/progressBar.css";
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
