@@ -1,4 +1,4 @@
 .some-task-box div:not(:last-child){
-    margin-bottom: 13px;
+    margin-bottom: 20px;
     text-align: justify;
 }

@@ -6,4 +6,3 @@ window.addEventListener('load', () => {
         requestAnimationFrame(update);
     }
 });
-

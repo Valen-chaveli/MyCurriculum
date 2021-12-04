@@ -1,11 +1,12 @@
 import { data } from "../../config/data.js";
 
 document.addEventListener("DOMContentLoaded", () => {
+
     addExperineces();
     addEducation();
     addLanguages();
     addSkills();
-    configSwitch();
+    configDarkMode();
 })
 
 function addExperineces() {
@@ -143,8 +144,8 @@ function addSkills() {
     });
 }
 
-
-function configSwitch() {
+function configDarkMode() {
+    
     const btnSwitch = document.querySelector("#switch");
     const header = document.querySelector("header");
     const titleSections = document.querySelectorAll("h2#title");
@@ -161,6 +162,9 @@ function configSwitch() {
         document.body.classList.toggle("dark"); 
         header.classList.toggle("dark");
 
+        if(document.body.classList.contains("dark")) localStorage.setItem("dark-mode", "true");
+        else localStorage.setItem("dark-mode", "false");
+        
         languegeItem.forEach((language) => {
             language.classList.toggle("dark")
         })
@@ -190,5 +194,77 @@ function configSwitch() {
         })
 
         btnSwitch.classList.toggle("active");
-    })
+    });
+
+    //Save dark-mode
+    if(localStorage.getItem("dark-mode") == "true") {
+        document.body.classList.add("dark");
+        header.classList.add("dark");
+
+        languegeItem.forEach((language) => {
+            language.classList.add("dark")
+        })
+
+        levelBarContainer.forEach((barContainer) => {
+            barContainer.classList.add("dark");
+        })
+
+        levelBarProgress.forEach((barProgrses) => {
+            barProgrses.classList.add("dark");
+        })
+
+        titleSections.forEach((titleSection) => {
+            titleSection.classList.add("dark");
+        });
+
+        sectionsContent.forEach((sectionContent) => {
+            sectionContent.classList.add("dark")
+        })
+
+        sectionsTextContent.forEach((section) => {
+            section.classList.add("dark");
+        })
+
+        personalCompetencesTitles.forEach((personalCompetence) => {
+            personalCompetence.classList.add("dark")
+        })
+
+        btnSwitch.classList.add("active");
+
+    } else {
+        document.body.classList.remove("dark"); 
+        header.classList.remove("dark");
+
+        languegeItem.forEach((language) => {
+            language.classList.remove("dark")
+        })
+
+        levelBarContainer.forEach((barContainer) => {
+            barContainer.classList.remove("dark");
+        })
+
+        levelBarProgress.forEach((barProgrses) => {
+            barProgrses.classList.remove("dark");
+        })
+
+        titleSections.forEach((titleSection) => {
+            titleSection.classList.remove("dark");
+        });
+
+        sectionsContent.forEach((sectionContent) => {
+            sectionContent.classList.remove("dark")
+        })
+
+        sectionsTextContent.forEach((section) => {
+            section.classList.remove("dark");
+        })
+
+        personalCompetencesTitles.forEach((personalCompetence) => {
+            personalCompetence.classList.remove("dark")
+        })
+
+        btnSwitch.classList.remove("active");
+
+    }
+
 }

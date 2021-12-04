@@ -5,8 +5,9 @@
 #cv-contact-content div > i{
     font-size: 1.2rem;
     font-size: 20px;
+
   }
 
 #cv-contact-content > div:not(:last-child){
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }

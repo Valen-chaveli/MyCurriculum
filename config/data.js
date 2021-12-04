@@ -4,14 +4,15 @@ export const data = {
         {
             id : "experience-1",
             duration: "9 months",
-            period : "10-03-21 - 10-03-21",
+            period : "10/03/21 - 10/03/21",
             company : "SKLUM S.L",
-            job : "Web Developer",
+            job : "Web App Developer",
             tasks : [
                 "- Develop, implement and maintain new features with PHP in Prestashop",
                 "- Microservices development with Nodejs using Hexagonal Architecture, SOLID and DDD design patterns",
                 "- End to end test development with Cypress",
-                "- Migrations and query operations with Mysql, PostgreSql and MariaDB"
+                "- Migrations and query operations with Mysql, PostgreSql and MariaDB",
+                "- APIS documentation with Swagger"
             ]
         },
         {
@@ -20,23 +21,24 @@ export const data = {
             duration : "3 months",
             period : "25-03-19 - 04-05-19",
             company: "DULCESOL S.L",
-            job : "Computer Technician",
+            job : "Technician in Microcomputer Systems and Networks",
             tasks : [
-                "- some tasks",
-                "- some tasks"
+                "- Maintenance and repair of hardware and software for specified projects",
+                "- OS Migration, Firewall Installation, Data Base Migration",
+                "- Install and configure network services (DHCP, DNS, APACHE, FTP)"
             ]
         }
     ],
 
     education : [
         {
-            period : "2019-2021",
-            titleName : "Certificate of Higher Education of Web Application Development",
+            period : "2019 - 2021",
+            titleName : "Certificate of Higher Education of Web Application Development (DAW)",
             schoolName : "IES MARÍA ENRÍQUEZ"
         },
         {
-            period : "2017-2019",
-            titleName : "Vocational Education and Training of Systems Microcomputers and networks",
+            period : "2017 - 2019",
+            titleName : "Vocational Education and Training of Systems Microcomputers and networks (SMX)",
             schoolName : "IES MARÍA ENRÍQUEZ"
         },
 
@@ -51,8 +53,8 @@ export const data = {
         },
         {
             languageName : "English",
-            level: "B1",
-            percent: "50%",
+            level: "A2",
+            percent: "40%",
             flagLink : "./assets/img/e-flag.png",
         },
     ],
